@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WEB SR VER2</title>
+  <style>
+  body{
+    margin:0;
+  }
+  h1{
+    border-bottom:5px red solid;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns:150px 1fr /* columns는 열 / row는 행 */
+  }
+  #grid ol{ /* 부모가 grid인 태그가 되는 것. */
+    border-right: 5px red solid;
+    width:60px;
+    margin:0;
+    padding:25px;
+    padding-left:40px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">WEB STUDY ROOM</a></h1>
+  <div id="grid">
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ol>
+    <div id="article">
+      <h2>HELLO WORLD</h2>
+      <p>this place ver2 world</p>
+    </div>
+  </div>
+</body>
+</html>
