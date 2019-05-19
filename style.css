@@ -1,0 +1,50 @@
+h1{
+  font-size:60px;
+  background-color : gray;
+  text-align: center;
+  border:10px double yellow;
+  display: block;
+
+  }
+
+h2{
+  text-align: center;
+}
+body{
+background-color : black;
+background-image : url("space.jpg");
+color: white;
+    }
+
+a {
+  color:yellow;
+  text-decoration: none;
+  }
+#mainimg{
+text-align:center;
+border-bottom: 5px solid white;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr
+}
+
+#grid ol{
+border-right:5px solid white;
+margin:0px;
+padding:20px;
+padding-left: 30px;
+width:45px;
+}
+
+@media(min-width:1200px){
+  h1,h2, #mainimg, #grid, #disqus_thread {
+    display:none;
+  }
+}
+
+@media(max-width:1200px){
+  #over1200{
+    display:none;
+  }
+}
